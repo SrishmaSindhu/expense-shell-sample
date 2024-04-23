@@ -40,7 +40,7 @@ read -s Mysql_root_password
   npm install &>>$LOGFILE
   VALIDATE $? "installing node js dependencies"
 
-  cp /home/ec2-user/expense-shell/backend.service /etc/systemd/system/backend.service &>>$LOGFILE
+  cp /home/ec2-user/expense-shell-sample/backend.service /etc/systemd/system/backend.service &>>$LOGFILE
   VALIDATE $? "copied backend service"
 
   systemctl daemon-reload &>>$LOGFILE

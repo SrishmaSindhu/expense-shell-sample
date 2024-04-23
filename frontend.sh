@@ -28,7 +28,7 @@ read -s Mysql_root_password
 
 
   #check your repo and path
-  cp /home/ec2-user/expense-shell/expense.conf /etc/nginx/default.d/expense.conf &>>$LOGFILE
+  cp /home/ec2-user/expense-shell-sample/expense.conf /etc/nginx/default.d/expense.conf &>>$LOGFILE
   VALIDATE $? "Copy expense path"
 
   systemctl restart nginx &>>$LOGFILE
