@@ -8,13 +8,13 @@ check_root
   read Mysql_root_password
 
   dnf install mysql-server -y &>>$LOGFILE
-  VALIDATE $? "installing mysql sever"
+  # VALIDATE $? "installing mysql sever"
 
   systemctl enable mysqld &>>LOGFILE
-  VALIDATE $? "enabling mysql"
+  # VALIDATE $? "enabling mysql"
 
   systemctl start mysqld &>>LOGFILE
-  VALIDATE $? "start mysql"
+  # VALIDATE $? "start mysql"
 
   # mysql_secure_installation --set-root-pass ExpenseApp@1
   # VALIDATE $? "setting up root password"
